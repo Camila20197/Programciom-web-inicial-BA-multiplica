@@ -1,0 +1,25 @@
+
+body{
+    background-color: rgb(225, 190, 190);
+}
+.titulo{
+    color: rgb(48, 34, 34);
+    font-style: initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.descripcion{
+    color: rgba(70, 60, 60);
+    font-style: italic;
+    font-weight: 200;
+    text-align: left;
+}
+img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 41, 41);
+    font-style: italic;
+}
