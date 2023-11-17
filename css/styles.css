@@ -39,22 +39,32 @@ body{
     text-align: left;
 }
 
-/*Posicion de mi carrusel*/
+/*Posicion de mi carrusel en index.html*/
 .contenedor{
     display: flex;
     justify-content: center;
 }
 
+/*Posicion del formulario de subscripcion en index.html*/
+.formulario-subscricion{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
 /*Animaciones y transiciones de productos.html*/
-.producto img {
+.transicion-imagen img {
     max-width: 100%;
     height: auto;
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 3s;
 }
 
 .producto {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 /*Formado de las imagenes de productos.html*/
@@ -63,6 +73,10 @@ body{
     background-color: rgb(240, 212, 212);
     border: 10px solid rgb(48, 34, 34);
 }
+/*evento en la pagina web*/
+.transicion-imagen:hover{
+    transform: scale(1.2);
+}
 /*Formado de los subtitulos en toda la web*/
 .subtitulo{
     color: rgb(48, 34, 34);
@@ -70,12 +84,39 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/*Posicion de los formularios*/
-.formulario-subscricion {
-    display: block;
-    margin-bottom: 8px; /* Añadir un espacio entre las etiquetas y los campos */
+/* Estilos para el formulario de subscricion.html*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; 
+    margin: auto; 
 }
 
+/* Estilos para los elementos del formulario subscricion.html*/
+.formulario label,
+.formulario input,
+.formulario textarea {
+    margin-bottom: 10px;
+}
+/* Estilos para el botón de envío subscricion.html*/
+.formulario input[type="submit"] {
+    align-self: left; 
+}
+/* Estilos para la imagen en subscricion.html*/
+.lema-nilo{
+ animation-name: fraseAnimacion; 
+ animation-duration: 10s;
+ animation-iteration-count: 4; 
+}
+
+@keyframes fraseAnimacion {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 /*Formato de mi footer*/
 footer{
     background-color: rgb(240, 212, 212);
