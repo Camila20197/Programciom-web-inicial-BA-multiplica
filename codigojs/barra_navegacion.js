@@ -1,15 +1,15 @@
 function searchCharacters() {
     let input = document.getElementById("search").value.toLowerCase();
-    let producto = document.getElementsByClassName("producto")
+    let productos = document.getElementsByClassName("producto")
 
-    for(let i=0; i < producto.length; i++){
-    let producto = producto[i].innerHTML.toLowerCase();
+    for(let i=0; i < productos.length; i++){
+    let nombreProducto = productos[i].getElementsByTagName("dt")[0].innerText.toLowerCase();
 
-    if(producto.includes(input)) {
-    producto[i].style.display = "table";
+    if(nombreProducto.includes(input)) {
+    productos[i].style.display = "table";
     } 
     else {
-    producto[i].style.display = "none"
+    productos[i].style.display = "none"
     }
     }
 
